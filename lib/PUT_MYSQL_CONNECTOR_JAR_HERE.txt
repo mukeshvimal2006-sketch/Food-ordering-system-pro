@@ -1,0 +1,18 @@
+Place the MySQL Connector/J driver jar in this folder, named exactly:
+
+    mysql-connector-j-8.4.0.jar
+
+Direct download link (Maven Central, no installer/registration needed):
+    https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.4.0/mysql-connector-j-8.4.0.jar
+
+This project's NetBeans Libraries reference already points to:
+    lib/mysql-connector-j-8.4.0.jar
+
+If you'd rather use a newer version, download it, place it here, then update
+BOTH of these lines in nbproject/project.properties to match your filename:
+    file.reference.mysql-connector-j-8.4.0.jar=lib/mysql-connector-j-8.4.0.jar
+    javac.classpath=\
+        ${file.reference.mysql-connector-j-8.4.0.jar}
+
+After placing the jar here, in NetBeans: right-click project -> Properties ->
+Libraries -> Compile tab -> Add JAR/Folder -> select this jar.
